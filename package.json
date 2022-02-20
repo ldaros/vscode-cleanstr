@@ -1,38 +1,58 @@
 {
   "name": "cleanstr",
-	"displayName": "CleanString",
-	"description": "Clean messy text",
-	"version": "0.0.1",
-	"author": "Luan Daros",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ldaros/vscode-cleanstr.git"
-	},
-
-	"engines": {
-		"vscode": "^1.64.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-        "onCommand:cleanstr.clean"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"commands": [{
-            "command": "cleanstr.clean",
-            "title": "Clean selected text"
-
-		}]
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint"
-	},
-	"devDependencies": {
-        "eslint": "^8.6.0",
-        "glob": "^7.2.0"
-    }
-
+  "displayName": "CleanString",
+  "description": "Clean messy text",
+  "version": "0.0.2",
+  "author": "Luan Daros",
+  "publisher": "daros",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ldaros/vscode-cleanstr.git"
+  },
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:cleanstr.clean",
+    "onCommand:cleanstr.cleanPreserve",
+    "onCommand:cleanstr.tableUnicode",
+    "onCommand:cleanstr.tableAscii",
+    "onCommand:cleanstr.tableMD"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cleanstr.clean",
+        "title": "Clean selected text"
+      },
+      {
+        "command": "cleanstr.cleanPreserve",
+        "title": "Clean selected text (preserve line breaks)"
+      },
+      {
+        "command": "cleanstr.tableUnicode",
+        "title": "Create table (Unicode)"
+      },
+      {
+        "command": "cleanstr.tableAscii",
+        "title": "Create table (ASCII)"
+      },
+      {
+        "command": "cleanstr.tableMD",
+        "title": "Create table (Markdown)"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "glob": "^7.2.0"
+  }
 }

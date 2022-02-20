@@ -1,0 +1,11 @@
+{
+  "name": "ascii-tables",
+  "version": "1.0.0",
+  "description": "Format tables in ascii",
+  "main": "index.js",
+  "author": "ozh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozh/ascii-tables.git"
+  }
+}
