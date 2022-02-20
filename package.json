@@ -3,6 +3,12 @@
 	"displayName": "CleanString",
 	"description": "Clean messy text",
 	"version": "0.0.1",
+	"author": "Luan Daros",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ldaros/vscode-cleanstr.git"
+	},
+
 	"engines": {
 		"vscode": "^1.64.0"
 	},
