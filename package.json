@@ -1,0 +1,32 @@
+{
+  "name": "cleanstr",
+	"displayName": "CleanString",
+	"description": "Clean messy text",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.64.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+        "onCommand:cleanstr.clean"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [{
+            "command": "cleanstr.clean",
+            "title": "Clean selected text"
+
+		}]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint"
+	},
+	"devDependencies": {
+        "eslint": "^8.6.0",
+        "glob": "^7.2.0"
+    }
+
+}
